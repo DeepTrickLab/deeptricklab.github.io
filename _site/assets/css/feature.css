@@ -1,0 +1,29 @@
+.navbar-brand{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.75rem;
+}
+
+.nav-item{
+  font-family: 'Cairo', 'Noto Sans TC', sans-serif, '微軟正黑體';
+  font-size: 1.125rem;
+}
+
+.content-container{
+  padding-top: 95px;
+  font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+}
+
+.bg-nctu-blue{
+  background-color: #1e4c97;
+}
+
+@media (min-width: 576px){
+  .flex-container{
+    width: 80%;
+  }
+}
+@media (max-width: 576px){
+  .flex-container{
+    width: 100%;
+  }
+}
