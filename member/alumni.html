@@ -5,7 +5,7 @@ title: Alumni - Member
 {% assign present_members = site.members | where: 'status', 'alumni' %}
 {% for member in present_members %}
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1">
-        <div class="card pt-3 mb-0">
+        <div class="card pt-3 mb-0 mb-sm-auto">
           <div class="card-img-top profile-img m-auto" 
           {% if member.profile-picture != null %}
             style="background-image: url({{ member.profile-picture }});"
