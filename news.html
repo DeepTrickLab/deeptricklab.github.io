@@ -5,7 +5,7 @@ title: News
 <link rel="stylesheet" href="{{ '/assets/css/news.css' | relative_url }}">
 <div class="d-flex justify-content-center">
     <div class="flex-container">
-      <h1 class="news-title">NEWS Board</h1>
+      <h2 class="news-title">NEWS</h2>
       <ul class="list-group news-list">
         {% for post in site.posts %}
         <a href="{{ post.url }}"><li class="list-group-item">{{ post.date | date: "%Y/%m/%d" }} {{ post.title }}</li></a>
