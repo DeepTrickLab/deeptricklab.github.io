@@ -3,9 +3,9 @@ layout: feature_default
 title: Alumni - Member
 ---
 {% assign present_members = site.members | where: 'status', 'alumni' %}
-{% for member in present_members %}
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1">
-        <div class="card pt-3 mb-0">
+{% for member in present_members reversed %}
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 mb-3">
+        <div class="card pt-3">
           <div class="card-img-top profile-img m-auto" 
           {% if member.profile-picture != null %}
             style="background-image: url({{ member.profile-picture }});"

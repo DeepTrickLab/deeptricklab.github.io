@@ -4,6 +4,6 @@ position: 108學年度
 status: present
 home:
 mail:
-github:
+github: https://github.com/purelyvivid
 ---
 Interest in Graph Neural Network.
