@@ -2,8 +2,9 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+# For local depolyment
+gem "jekyll"
 
-# gem "rails"
-# gem "jekyll"
-gem "github-pages", "~> 3.8.7", group: :jekyll_plugins
+# Github page depolyment
+# git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+# gem "github-pages", "~> 3.8.7", group: :jekyll_plugins
