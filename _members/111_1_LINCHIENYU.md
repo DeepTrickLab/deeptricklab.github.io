@@ -4,6 +4,6 @@ position: 111學年度
 status: present
 profile-picture:
 home:
-mail: 
+mail: anne10811.ai11@nycu.edu.tw
 github:
 ---
