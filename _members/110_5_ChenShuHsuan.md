@@ -4,6 +4,6 @@ position: 110學年度
 status: present
 profile-picture:
 home:
-mail: 
+mail: sylinnycu.ai10@nycu.edu.tw
 github:
 ---
