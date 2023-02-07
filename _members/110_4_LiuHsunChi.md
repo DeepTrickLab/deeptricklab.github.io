@@ -4,6 +4,6 @@ position: 110學年度
 status: present
 profile-picture:
 home:
-mail: 
+mail: love124609@gmail.com
 github:
 ---
