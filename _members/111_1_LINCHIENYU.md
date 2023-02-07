@@ -7,5 +7,3 @@ home:
 mail: 
 github:
 ---
-
-.
