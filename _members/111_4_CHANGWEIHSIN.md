@@ -4,6 +4,6 @@ position: 111學年度
 status: present
 profile-picture:
 home:
-mail: 
+mail: whchang.ai11@nycu.edu.tw
 github:
 ---
