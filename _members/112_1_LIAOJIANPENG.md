@@ -4,6 +4,6 @@ position: 112學年度
 status: present
 profile-picture:
 home:
-mail: anne10811.ai11@nycu.edu.tw
+mail: jpeng.ai12@nycu.edu.tw
 github:
 --- 
