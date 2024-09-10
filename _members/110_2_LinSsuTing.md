@@ -7,3 +7,4 @@ home:
 mail: linsst97.ai10@nycu.edu.tw
 github:
 ---
+Works at PHISON Electronics 

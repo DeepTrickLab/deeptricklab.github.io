@@ -4,6 +4,6 @@ position: 112學年度
 status: present
 profile-picture:
 home:
-mail: zonghan.ai12@nycu.edu.tw
+mail: paul52841018@gmail.com
 github:
 ---
