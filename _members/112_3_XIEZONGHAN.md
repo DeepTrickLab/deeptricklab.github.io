@@ -1,7 +1,7 @@
 ---
 name: 謝宗翰
 position: 112學年度
-status: present
+status: alumni
 profile-picture:
 home:
 mail: paul52841018@gmail.com
