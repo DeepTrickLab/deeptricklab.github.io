@@ -7,4 +7,4 @@ home:
 mail: sylinnycu.ai10@nycu.edu.tw
 github:
 ---
-Works at TSMC
+Works at Nvidia
