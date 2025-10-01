@@ -1,0 +1,151 @@
+---
+layout: feature_md
+title: Activity
+---
+<!--
+<div class="activities-list">
+  {% if site.activity %}
+    {% assign sorted_activities = site.activity | sort: 'date' | reverse %}
+    {% for act in sorted_activities %}
+      <div class="activity-block">
+        <h3>{{ act.title }}</h3>
+        <div class="activity-images">
+            <div class="carousel-track">
+                {% if act.images %}
+                    {% for img in act.images %}
+                    <img src="{{ img }}" alt="{{ act.title }}">
+                    {% endfor %}
+                    {% for img in act.images %} 
+                        <img src="{{ img }}" alt="{{ act.title }}">
+                    {% endfor %}
+                {% endif %}
+                </div>
+            </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>目前沒有活動</p>
+  {% endif %}
+</div>
+
+<style>
+.activity-block {
+    margin-bottom: 40px;
+}
+
+/* 活動圖片容器 */
+.activity-images {
+    display: flex;
+    overflow-x: hidden; /* 隱藏滾動條 */
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    animation: scroll-left 20s linear infinite; /* 自動滾動 */
+}
+
+.carousel-track img {
+    flex: 0 0 auto;
+    width: 450px;
+    height: 350px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+</style>
+-->
+
+<div class="activities-list">
+  {% if site.activity %}
+    {% assign sorted_activities = site.activity | sort: 'date' | reverse %}
+    {% for act in sorted_activities %}
+      <div class="activity-block">
+        <h3>{{ act.title }} {{ act.date | date: "%Y/%m/%d" }}</h3>
+        <div class="activity-images">
+          <div class="carousel-track">
+            {% if act.images %}
+              {% assign img_count = act.images | size %}
+              {% for img in act.images %}
+                <img src="{{ img }}" alt="{{ act.title }}">
+              {% endfor %}
+
+              {% if img_count >= 3 %}
+                {% for img in act.images %} <!-- 只有三張以上才複製 -->
+                  <img src="{{ img }}" alt="{{ act.title }}">
+                {% endfor %}
+              {% endif %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>目前沒有活動</p>
+  {% endif %}
+</div>
+
+<style>
+    .activity-block { 
+        margin-bottom: 40px; 
+    }
+
+    .activity-images { 
+        overflow: hidden; 
+        position: relative; 
+    }
+
+    .carousel-track { 
+        display: flex; 
+        gap: 10px; 
+    }
+
+    .carousel-track img { 
+        flex: 0 0 auto; 
+        width: 450px; 
+        height: 350px; 
+        object-fit: cover; 
+        border-radius: 5px; 
+    }
+</style>
+
+<script>
+    document.querySelectorAll('.activity-images').forEach(container => {
+    const track = container.querySelector('.carousel-track');
+    const imgs = track.querySelectorAll('img');
+    
+    // 只有三張以上圖片才滾動
+    if (imgs.length < 3) return;
+    
+    let speed = 1; 
+    let isPaused = false;
+
+    container.addEventListener('mouseenter', () => isPaused = true);
+    container.addEventListener('mouseleave', () => isPaused = false);
+    container.addEventListener('touchstart', () => isPaused = true);
+    container.addEventListener('touchend', () => isPaused = false);
+
+
+    function animate() {
+        if (!isPaused) {
+        container.scrollLeft += speed;
+        if (container.scrollLeft >= track.scrollWidth / 2) {
+            container.scrollLeft = 0;
+        }
+        }
+        requestAnimationFrame(animate);
+    }
+    animate();
+    });
+</script>
+

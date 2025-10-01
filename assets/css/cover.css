@@ -112,34 +112,39 @@
   }
   
   .advisor-col {
-    background: url('{{ './assets/images/cover/advisor.jpg' | relative_url }}') no-repeat center;
+    background: url("{{ './assets/images/cover/advisor.jpg' | relative_url }}") no-repeat center;
     background-size: cover;
   }
 
   @media (max-width: 576px){
     .advisor-col {
-      background: url('{{ './assets/images/cover/advisor-xs.jpg' | relative_url }}') no-repeat center;
+      background: url("{{ './assets/images/cover/advisor-xs.jpg' | relative_url }}") no-repeat center;
       background-size: cover;
     }
   }
   
   .member-col{
-      background: url({{ './assets/images/cover/member.jpg' | relative_url }}) no-repeat center;
+      background: url("{{ './assets/images/cover/member.jpg' | relative_url }}") no-repeat center;
       background-size: cover;
   }
   
   .introduction-col {
-      background: url({{ './assets/images/cover/about.jpg' | relative_url }}) no-repeat center;
+      background: url("{{ './assets/images/cover/about.jpg' | relative_url }}") no-repeat center;
       background-size: cover;
   }
   
   .research-col{
-      background: url('{{ './assets/images/cover/research.jpg' | relative_url }}') no-repeat center;
+      background: url("{{ './assets/images/cover/research.jpg' | relative_url }}") no-repeat center;
       background-size: cover;
   }
   
   .college-col{
-      background: url('{{ './assets/images/cover/nctuai.jpg' | relative_url }}') no-repeat center;
+      background: url("{{ './assets/images/cover/nctuai.jpg' | relative_url }}") no-repeat center;
+      background-size: cover;
+  }
+
+  .activity-col{
+      background: url("{{ './assets/images/cover/activity.jpg' | relative_url }}") no-repeat center;
       background-size: cover;
   }
   

@@ -3,3 +3,5 @@ sass:
   sass_dir: _sass
 collections:
   members:
+  activity:
+      output: true
